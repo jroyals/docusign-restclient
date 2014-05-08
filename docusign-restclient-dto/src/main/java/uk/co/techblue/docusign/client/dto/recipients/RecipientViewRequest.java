@@ -40,6 +40,10 @@ public class RecipientViewRequest extends BaseDto{
 	@JsonProperty("email")
 	private String email;
 
+	/** The email. */
+	@JsonProperty("clientUserId")
+	private String clientUserId;
+
 	/** The return url. */
 	@JsonProperty("returnUrl")
 	private String returnUrl;
@@ -141,4 +145,11 @@ public class RecipientViewRequest extends BaseDto{
 		this.userName = userName;
 	}
 
+    public String getClientUserId() {
+        return clientUserId;
+    }
+
+    public void setClientUserId(String clientUserId) {
+        this.clientUserId = clientUserId;
+    }
 }
